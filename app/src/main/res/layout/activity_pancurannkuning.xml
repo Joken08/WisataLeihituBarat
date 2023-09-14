@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    tools:context=".Pancurannkuning">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="293dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/back"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="7dp"
+                            app:cardBackgroundColor="#28000000"
+                            app:cardCornerRadius="5dp">
+
+                            <ImageView
+                                android:id="@+id/back1"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="#FF0505"
+                                app:srcCompat="@drawable/baseline_keyboard_backspace_24" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="110dp"
+                            android:background="@drawable/shadow"
+                            android:elevation="10dp"
+                            android:gravity="center"
+                            android:text="PANCURAN KUNING"
+                            android:textAlignment="center"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="293dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="293dp"
+                            android:layout_height="wrap_content">
+
+                            <com.denzcoskun.imageslider.ImageSlider
+                                android:id="@+id/imageslider"
+                                android:layout_width="293dp"
+                                android:layout_height="170dp"
+                                app:iss_period="1000"
+                                app:iss_corner_radius="10"
+                                app:iss_auto_cycle="true"
+                                app:iss_delay="1000"
+                                app:iss_title_background="@drawable/bdc1"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="293dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="7dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:justificationMode="inter_word"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/gbr2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="7dp"
+                                    app:srcCompat="@drawable/deskripsi_foreground" />
+
+                                <TextView
+                                    android:id="@+id/ntw8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Deskripsi"
+                                    android:textColor="#A8A7A7"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <com.borjabravo.readmoretextview.ReadMoreTextView
+                                android:id="@+id/deskripsi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:justificationMode="inter_word"
+                                android:text="@string/pancurankuning"
+                                android:textColor="#2E2D2D"
+                                android:textSize="12sp"
+                                app:colorClickableText="#039BE5"
+                                app:trimLength="180"
+                                app:trimMode="trimModeLength" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/alamat1"
+                                    android:layout_width="13dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="7dp"
+                                    app:srcCompat="@drawable/baseline_add_location_24" />
+
+                                <TextView
+                                    android:id="@+id/alamat2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Alamat"
+                                    android:textColor="#A8A7A7"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/alamat3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Negeri Larike"
+                                android:textColor="#2E2D2D"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/jam1"
+                                    android:layout_width="12dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="7dp"
+                                    app:srcCompat="@drawable/baseline_access_time_filled_24" />
+
+                                <TextView
+                                    android:id="@+id/jam2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Jam Buka"
+                                    android:textColor="#A8A7A7"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+                                    android:layout_width="45dp"
+                                    android:layout_height="20dp" />
+
+                                <ImageView
+                                    android:id="@+id/jam3"
+                                    android:layout_width="12dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="7dp"
+                                    app:srcCompat="@drawable/baseline_access_time_filled_24" />
+
+
+                                <TextView
+                                    android:id="@+id/jam4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Jam Tutup"
+                                    android:textColor="#A8A7A7"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/jam5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="09.00 WIT"
+                                    android:textColor="#2E2D2D"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="62dp"
+                                    android:layout_height="20dp" />
+
+                                <TextView
+                                    android:id="@+id/jam6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="17.00 WIT"
+                                    android:textColor="#2E2D2D"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/telepon1"
+                                    android:layout_width="12dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="7dp"
+                                    app:srcCompat="@drawable/baseline_web_24" />
+
+                                <TextView
+                                    android:id="@+id/telepon2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Website"
+                                    android:textColor="#A8A7A7"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+                                    android:layout_width="58dp"
+                                    android:layout_height="20dp" />
+
+                                <ImageView
+                                    android:id="@+id/ig1"
+                                    android:layout_width="12dp"
+                                    android:layout_height="21dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="7dp"
+                                    app:srcCompat="@drawable/ig" />
+
+                                <TextView
+                                    android:id="@+id/ig2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Facebook"
+                                    android:textColor="#A8A7A7"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="7dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/jam"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="-"
+                                    android:textColor="#2E2D2D"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="114dp"
+                                    android:layout_height="20dp" />
+
+                                <TextView
+                                    android:id="@+id/ig3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Pancuran Kuning, Larike"
+                                    android:textColor="#2E2D2D"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="293dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/tiket1"
+                                    android:layout_width="12dp"
+                                    android:layout_height="21dp"
+                                    android:layout_marginLeft="7dp"
+                                    app:srcCompat="@drawable/tiket" />
+
+                                <TextView
+                                    android:id="@+id/tiket2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Tiket Umum"
+                                    android:textColor="#A8A7A7"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tiket3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Rp. 5.000"
+                                android:textColor="#2E2D2D"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="293dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/cardview_light_background"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/mapspancurannkuning"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginBottom="10dp"
+                                app:cardBackgroundColor="#F74600"
+                                app:cardCornerRadius="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="left"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ARAHKAN SAYA KE PANCURAN KUNING"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="12sp" />
+
+                                    <ImageView
+                                        android:id="@+id/rute"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginLeft="7dp"
+                                        app:srcCompat="@drawable/rute1" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

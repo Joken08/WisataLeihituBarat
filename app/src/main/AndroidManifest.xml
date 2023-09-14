@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WisataLeihituBarat"
+        tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC0gHUVJQWSbWVduQ2lG839L0tzEFp0uI4" />
+
+        <activity
+            android:name=".MapsKolamMorea"
+            android:exported="false"
+            android:label="@string/title_activity_maps_kolam_morea" />
+        <activity
+            android:name=".KolamMorea"
+            android:exported="false" />
+        <activity
+            android:name=".MapsPancurannKuning"
+            android:exported="false"
+            android:label="@string/title_activity_maps_pancurann_kuning" />
+        <activity
+            android:name=".Pancurannkuning"
+            android:exported="false" />
+        <activity
+            android:name=".MapsBatuLayar"
+            android:exported="false"
+            android:label="@string/title_activity_maps_batu_layar" />
+        <activity
+            android:name=".BatuLayar"
+            android:exported="false" />
+        <activity
+            android:name=".MapsHuluwa"
+            android:exported="false"
+            android:label="@string/title_activity_maps_huluwa" />
+        <activity
+            android:name=".Huluwa"
+            android:exported="false" />
+        <activity
+            android:name=".MapsPuncakLove"
+            android:exported="false"
+            android:label="@string/title_activity_maps_puncak_love" />
+        <activity
+            android:name=".PuncakLove"
+            android:exported="false" />
+        <activity
+            android:name=".MapsBatuKapal"
+            android:exported="false"
+            android:label="@string/title_activity_maps_batu_kapal" />
+        <activity
+            android:name=".BatuKapal"
+            android:exported="false" />
+        <activity
+            android:name=".MapsBatuDuaCafe"
+            android:exported="false"
+            android:label="@string/title_activity_maps_batu_dua_cafe" />
+        <activity
+            android:name=".BatuDuaCafe"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".Panduan"
+            android:exported="false" />
+        <activity
+            android:name=".Wisata"
+            android:exported="true" />
+        <activity
+            android:name=".Etika"
+            android:exported="false" />
+        <activity
+            android:name=".MenuUtama"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
